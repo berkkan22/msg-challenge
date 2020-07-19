@@ -30,18 +30,13 @@ def berechneEntferung(firstposition, secondposition):
             Hält ein Array mit dem entsprechendem Index der Stadt
         '''
 
-    # TODO: Berechnung in km
     lat1 = float(firstposition["Breitengrad"])
     lat2 = float(secondposition["Breitengrad"])
     lon1 = float(firstposition["Längengrad"])
     lon2 = float(secondposition["Längengrad"])
 
     dist = 6378.388 * math.acos(math.sin(lat1) * math.sin(lat2) + math.cos(lat1) * math.cos(lat2) * math.cos(lon2 - lon1))
-    # dist = round(dist, 4)
-    # x = abs(lat1 - lat2)
-    # y = abs(lon1 - lon2)
-    # print(dist)
-    # return math.sqrt(x**2 + y**2)
+    
     return dist
 
 def printCity(array):
