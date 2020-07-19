@@ -23,7 +23,7 @@ def annealing(currentArray, temp, cooldown):
 
     currentDistanz = calc.berechneGesamtLaenge(currentArray)
 
-    print("Start Entfernung:", currentDistanz)
+    print("Start Entfernung:", currentDistanz, "km")
 
     bestSolution = currentArray[:]
 
@@ -52,6 +52,6 @@ def annealing(currentArray, temp, cooldown):
         
         temp *= 1-cooldown    
 
-    print("Kürzseste Entfernung:", calc.berechneGesamtLaenge(bestSolution))
+    print("Kürzseste Entfernung:", calc.berechneGesamtLaenge(bestSolution), "km")
 
     calc.printCity(bestSolution)
