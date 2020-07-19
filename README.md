@@ -1,7 +1,5 @@
 # mas-challange
 
-Foobar is a Python library for dealing with word pluralization.
-
 ## Vorraussetzung
 
 Python 3.8
