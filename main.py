@@ -14,5 +14,3 @@ try:
 
 except OSError as err:
     print("OS error: {0}".format(err))
-    
-input("Press 'ENTER' to exit...")
