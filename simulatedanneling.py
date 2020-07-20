@@ -21,6 +21,9 @@ def annealing(currentArray, temp, cooldown):
         Je kleiner die cooldown Rate desto besser ist das 
         Ergebniss, aber desto länger dauert die Berechnung.
     '''
+    
+    # visualisierung.createBasemap()
+
 
     currentDistanz = calc.berechneGesamtLaenge(currentArray)
 
