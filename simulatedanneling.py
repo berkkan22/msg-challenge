@@ -1,6 +1,7 @@
 import helperFunctions as calc
 import random
 import math
+# import visualisierung
 
 def annealing(currentArray, temp, cooldown):
     ''' Simulated Annealing Algoritmus
@@ -43,15 +44,19 @@ def annealing(currentArray, temp, cooldown):
 
         if(newDistanz < currentDistanz):
             currentArray = newSolution[:]
+            # visualisierung.path(currentArray, calc.berechneGesamtLaenge(currentArray), False)
 
         elif(math.exp((currentDistanz - newDistanz)/temp) < random.random()):
             currentArray = newSolution[:]
+            # visualisierung.path(currentArray, calc.berechneGesamtLaenge(currentArray), False)
 
         if(calc.berechneGesamtLaenge(currentArray) < calc.berechneGesamtLaenge(bestSolution)):
             bestSolution = currentArray[:]
+            # visualisierung.path(currentArray, calc.berechneGesamtLaenge(currentArray), True)
         
         temp *= 1-cooldown    
 
+    # visualisierung.bestpath(currentArray, calc.berechneGesamtLaenge(currentArray))
     print("Kürzseste Entfernung:", calc.berechneGesamtLaenge(bestSolution), "km")
 
     calc.printCity(bestSolution)
