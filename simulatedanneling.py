@@ -24,7 +24,6 @@ def annealing(currentArray, temp, cooldown):
     
     # visualisierung.createBasemap()
 
-
     currentDistanz = calc.berechneGesamtLaenge(currentArray)
 
     print("Start Entfernung:", currentDistanz, "km")
@@ -59,7 +58,11 @@ def annealing(currentArray, temp, cooldown):
         
         temp *= 1-cooldown    
 
+    # visualisierung.createBasemap()
     # visualisierung.bestpath(currentArray, calc.berechneGesamtLaenge(currentArray))
+
     print("Kürzseste Entfernung:", calc.berechneGesamtLaenge(bestSolution), "km")
 
     calc.printCity(bestSolution)
+
+# input("Press ENTER to exit...")
