@@ -15,8 +15,30 @@ Code z.B. als zip-Datei runterladen und entpacken.
 
 Anschließend *main.py* ausführen.
 
-Wenn sie die Visualisierung aktivieren möchten. Muss *matplotlib* und *basemap* installiert sein. Anschließend kommentieren sie die Zeilen in *simulatedannealing.py* aus.
+Wenn Sie die Visualisierung aktivieren möchten. Muss *matplotlib* und *basemap* installiert sein. Anschließend kommentieren sie in *simulatedannealing.py* folgende Zeilen aus
+```python
+4.  # import visualisierung
 
+25. # visualisierung.createBasemap()
+
+49. # visualisierung.path(currentArray, calc.berechneGesamtLaenge(currentArray), False)
+
+53. # visualisierung.path(currentArray, calc.berechneGesamtLaenge(currentArray), False)
+
+57. # visualisierung.path(currentArray, calc.berechneGesamtLaenge(currentArray), True)
+
+62. # visualisierung.bestpath(currentArray, calc.berechneGesamtLaenge(currentArray))
+```
+
+Wenn Sie hingegen nur am Ende die Strecke Visualisieren möchten, müssen sie folgende Zeilen auskommentieren
+```python
+4.  # import visualisierung
+
+61. # visualisierung.createBasemap()
+
+62. # visualisierung.bestpath(currentArray, calc.berechneGesamtLaenge(currentArray))
+
+```
 ##
 ```python
 simulatedanneling.annealing(cityList, 100000, 0.00003)
