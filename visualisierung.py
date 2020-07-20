@@ -103,5 +103,15 @@ def bestpath(array, distanz):
 
     bestDistanz = fig.text(0.01, 0.8, distanz)
 
+    printCity(array)
+
     plt.draw()
     plt.pause(0.00001)
+
+
+def printCity(array):
+    y = 0.95
+    for i in array:
+        y -= 0.05
+        fig.text(0.8, y, i["msg Standort"])
+    
