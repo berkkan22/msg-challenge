@@ -64,5 +64,3 @@ def annealing(currentArray, temp, cooldown):
     print("Kürzseste Entfernung:", calc.berechneGesamtLaenge(bestSolution), "km")
 
     calc.printCity(bestSolution)
-
-# input("Press ENTER to exit...")
