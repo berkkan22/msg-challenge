@@ -10,7 +10,7 @@ try:
         for row in csv_reader_object:
             cityList.append(row)
 
-    simulatedanneling.annealing(cityList, 10000, 0.0003)
+    simulatedanneling.annealing(cityList, 100000, 0.00003)
 
 except OSError as err:
     print("OS error: {0}".format(err))
