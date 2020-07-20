@@ -21,10 +21,10 @@ Wenn sie die Visualisierung aktivieren möchten. Muss *matplotlib* und *basemap*
 ```python
 simulatedanneling.annealing(cityList, 100000, 0.00003)
 ```
-Bei dieser Ausführung habe ich als beste Route 103712.728 km erhalten.
+Bei dieser Ausführung habe ich als beste Route 97627.179 km erhalten.
 Dabei wurde folgende Route gewählt:
 
-Ismaning/München (Hauptsitz) -> Passau -> Stuttgart -> Ingolstadt -> St. Georgen -> Hamburg -> Köln/Hürth -> Görlitz -> Münster -> Hannover -> Chemnitz -> Essen -> Lingen (Ems) -> Berlin -> Schortens/Wilhelmshaven -> Nürnberg -> Düsseldorf -> Braunschweig -> Frankfurt -> Bretten -> Walldorf -> Ismaning/München (Hauptsitz) (Wieder zurück)
+Ismaning/München (Hauptsitz) -> Passau -> Stuttgart -> St. Georgen -> Ingolstadt -> Bretten -> Hamburg -> Köln/Hürth -> Essen -> Braunschweig -> Hannover -> Lingen (Ems) -> Münster -> Düsseldorf -> Chemnitz -> Nürnberg -> Schortens/Wilhelmshaven -> Berlin -> Görlitz -> Frankfurt -> Walldorf -> Ismaning/München (Hauptsitz) (Wieder zurück)
 
 Ich habe den Code auf *Windows 10* mit *python 3.8* geteste.
 
